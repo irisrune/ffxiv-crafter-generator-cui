@@ -1,3 +1,9 @@
+# Execute Files
+main
+
+# Log Files
+stdout.log
+
 # System Files
 .DS_Store
 Thumbs.db
