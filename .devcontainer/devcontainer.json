@@ -1,0 +1,32 @@
+{
+  "name": "Go",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/go/src/ffxiv-crafter-generator-cui",
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "ash": {
+        "path": "/bin/ash",
+        "args": []
+      }
+    },
+    "terminal.integrated.defaultProfile.linux": "ash",
+    "go.toolsManagement.checkForUpdates": "off",
+    "go.gopath": "/go",
+    "go.gocodeAutoBuild": true,
+    "go.formatTool": "gofmt",
+    "go.useLanguageServer": true,
+    "editor.formatOnSave": false,
+    "[go]": {
+      "editor.formatOnSave": true
+    }
+  },
+  "extensions": [
+	"golang.go",
+	"ms-azuretools.vscode-docker",
+	"mhutchie.git-graph",
+	"eamodio.gitlens",
+	"oderwat.indent-rainbow",
+	"2gua.rainbow-brackets"
+],
+}

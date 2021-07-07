@@ -1,10 +1,9 @@
 version: "3.8"
 services: 
   app:
-    image: golang:1.16-alpine3.14
-    command: sh -c "go run main.go > stdout.log"
-    working_dir: /src/ffxiv-crafter-generator-cui
+    build: .
+    tty: true
+    stdin_open: true
+    command: /bin/ash
     volumes:
-      - .:/src/ffxiv-crafter-generator-cui
-    environment: 
-      - GO111MODULE=on
+      - .:/go/src/ffxiv-crafter-generator-cui
